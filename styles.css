@@ -512,6 +512,9 @@ section {
     border-radius: 12px;
     border: 2px solid var(--border-color);
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    display: block;
 }
 
 .image-placeholder {
@@ -537,6 +540,8 @@ section {
     border-radius: 12px;
     opacity: 0.5;
     transition: all 0.3s ease;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .image-wrapper:hover .image-border {
