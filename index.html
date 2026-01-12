@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Pawar - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-text">SP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">
+                        <span class="name-line">Suraj Pawar</span>
+                    </h1>
+                    <h2 class="hero-title">
+                        <span class="typing-text">DevOps Engineer</span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Building scalable cloud infrastructure and automating deployments with 5 years of expertise in AWS, Azure, and Kubernetes.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">deploy.sh</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-line"><span class="code-comment"># Automated CI/CD Pipeline</span></span>
+<span class="code-line"><span class="code-keyword">kubectl</span> apply -f k8s/</span>
+<span class="code-line"><span class="code-keyword">terraform</span> apply</span>
+<span class="code-line"><span class="code-keyword">aws</span> s3 sync ./dist s3://bucket</span>
+<span class="code-line"><span class="code-comment"># Infrastructure as Code</span></span>
+<span class="code-line"><span class="code-keyword">docker</span> build -t app:latest .</span>
+<span class="code-line"><span class="code-keyword">helm</span> upgrade --install app ./chart</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate DevOps Engineer with 5 years of experience designing, implementing, and maintaining cloud infrastructure solutions. 
+                        I specialize in building robust CI/CD pipelines, container orchestration, and infrastructure automation.
+                    </p>
+                    <p>
+                        My expertise spans across AWS and Azure cloud platforms, with deep knowledge in Kubernetes for container orchestration. 
+                        I'm passionate about Infrastructure as Code, automation, and creating scalable, reliable systems.
+                    </p>
+                    <p>
+                        When I'm not architecting cloud solutions, I enjoy contributing to open-source projects, 
+                        sharing knowledge through technical blogs, and staying updated with the latest DevOps trends.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Deployed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Automation Focus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fab fa-aws skill-icon"></i>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GCP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cube skill-icon"></i>
+                        <h3>Containerization</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Helm</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>IaC & Automation</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Terraform</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Ansible</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CloudFormation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-sync-alt skill-icon"></i>
+                        <h3>CI/CD</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Jenkins</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitLab CI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Actions</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-terminal skill-icon"></i>
+                        <h3>Scripting & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bash</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h3>Monitoring & Logging</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Prometheus</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Grafana</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ELK Stack</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - Present</span>
+                        <h3>Senior DevOps Engineer</h3>
+                        <h4>Company Name</h4>
+                        <ul>
+                            <li>Architected and deployed scalable cloud infrastructure on AWS and Azure</li>
+                            <li>Implemented Kubernetes clusters for container orchestration, reducing deployment time by 60%</li>
+                            <li>Designed and maintained CI/CD pipelines using Jenkins and GitLab CI</li>
+                            <li>Automated infrastructure provisioning using Terraform and Ansible</li>
+                            <li>Reduced infrastructure costs by 40% through optimization and automation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2020</span>
+                        <h3>DevOps Engineer</h3>
+                        <h4>Company Name</h4>
+                        <ul>
+                            <li>Managed and maintained cloud infrastructure on AWS</li>
+                            <li>Implemented Docker containerization for microservices architecture</li>
+                            <li>Set up monitoring and logging solutions using Prometheus and Grafana</li>
+                            <li>Automated deployment processes reducing manual errors by 70%</li>
+                            <li>Collaborated with development teams to improve release cycles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Multi-Cloud Infrastructure</h3>
+                    <p class="project-description">
+                        Designed and implemented a hybrid cloud solution using AWS and Azure with Kubernetes orchestration. 
+                        Includes automated scaling, monitoring, and disaster recovery.
+                    </p>
+                    <div class="project-tech">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>Kubernetes</span>
+                        <span>Terraform</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">CI/CD Pipeline Automation</h3>
+                    <p class="project-description">
+                        Built a comprehensive CI/CD pipeline using Jenkins and GitLab CI with automated testing, 
+                        security scanning, and deployment to multiple environments.
+                    </p>
+                    <div class="project-tech">
+                        <span>Jenkins</span>
+                        <span>GitLab CI</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Infrastructure Monitoring Platform</h3>
+                    <p class="project-description">
+                        Developed a centralized monitoring solution using Prometheus, Grafana, and ELK stack 
+                        for real-time metrics, logging, and alerting across multiple cloud environments.
+                    </p>
+                    <div class="project-tech">
+                        <span>Prometheus</span>
+                        <span>Grafana</span>
+                        <span>ELK Stack</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Kubernetes Cluster Management</h3>
+                    <p class="project-description">
+                        Automated Kubernetes cluster provisioning and management using Terraform and Helm charts. 
+                        Includes auto-scaling, service mesh, and security policies.
+                    </p>
+                    <div class="project-tech">
+                        <span>Kubernetes</span>
+                        <span>Helm</span>
+                        <span>Terraform</span>
+                        <span>Ansible</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cloud Cost Optimization</h3>
+                    <p class="project-description">
+                        Created automated tools for cloud cost analysis and optimization across AWS and Azure, 
+                        resulting in 40% cost reduction through resource right-sizing and scheduling.
+                    </p>
+                    <div class="project-tech">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>Python</span>
+                        <span>Terraform</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Disaster Recovery Automation</h3>
+                    <p class="project-description">
+                        Implemented automated disaster recovery solution with cross-region backups, 
+                        automated failover, and RTO/RPO optimization for critical applications.
+                    </p>
+                    <div class="project-tech">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>Terraform</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, interesting projects, or just having a chat about DevOps and cloud technologies.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Available for Remote Work</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com" target="_blank" class="contact-social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="contact-social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="contact-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://medium.com" target="_blank" class="contact-social-link"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Suraj Pawar. Built with passion for DevOps.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
